@@ -14,7 +14,7 @@ def concluir_tarefa():
         print("Nenhuma tarefa cadastrada.")
     return
 
-listar_tarefa()
+listar_tarefas()
 
 try:
     numero = int(
@@ -26,7 +26,7 @@ try:
 
     if indice < 0 or indice >= len(tarefas):
     print("tarefa inválida.")
-return
+    return
 
     tarefas[indice]["concluida"] = True
 
